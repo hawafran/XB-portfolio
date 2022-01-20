@@ -1,0 +1,33 @@
+* {
+  text-align: center;
+  /* font-family: 'Advent Pro', sans-serif; */
+  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: black;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.footer-fixed footer {
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+.footer-fixed {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.about-image {
+  background-color: black;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.bio-card{
+  margin-top:10%
+}
+.bio-button:hover{
+  filter: opacity(.8)
+}
+
+/* buttons:#424242 grey darken-3 */
+/* background:#000000 black */
+/* text:#ffffff white */
