@@ -9,12 +9,12 @@
     background-color: black;
     padding-top: 10px;
 }
-/* .gallery .pics{
+.gallery .pics{
     -webkit-transition: all 350ms ease;
     transition: all 350ms ease;
     cursor: pointer;
     margin-bottom: 12px;
-}  */
+} 
 .gallery .pics:hover{
     filter: opacity(.8)
 }

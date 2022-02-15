@@ -16,6 +16,7 @@ function App () {
 <Routes>
   <Route path='/' element={<Work />} />
   <Route path='/aboutme' element={<About />} />
+  <Route path='/style' element={<Style />} />
 
   
   {/* <Route render={() => <h1 className='display-2'>Welcome To Our Site!!</h1>} /> */}
