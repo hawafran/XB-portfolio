@@ -3,8 +3,8 @@ import 'materialize-css';
 import { Navbar, NavItem, Icon, } from 'react-materialize';
 import '../App.css'
 
+
 const NavBar = () => {
-  
 
   return (
 <div class="navbar-fixed">

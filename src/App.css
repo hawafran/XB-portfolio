@@ -4,9 +4,11 @@
   font-family: 'Advent Pro', sans-serif;
   font-family: 'Raleway', sans-serif;
   background-color: black;
-  padding-bottom: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-bottom: 2px black;
+  padding-left: 2px black;
+  padding-right: 2px black;
+  
+
 }
 .footer-fixed footer {
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
@@ -15,6 +17,7 @@
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+  background-color: black;
 }
 .about-image {
   background-color: black;
@@ -26,6 +29,11 @@
 }
 .bio-button:hover{
   filter: opacity(.8)
+}
+.video-app {
+  position: absolute;
+  padding: 10px;
+  background-color: transparent;
 }
 
 /* buttons:#424242 grey darken-3 */
