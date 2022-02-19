@@ -3,7 +3,7 @@
   /* font-family: 'Advent Pro', sans-serif; */
   font-family: 'Advent Pro', sans-serif;
   font-family: 'Raleway', sans-serif;
-  background-color: black;
+  /* background-color: black; */
   padding-bottom: 2px black;
   padding-left: 2px black;
   padding-right: 2px black;
@@ -19,6 +19,9 @@
 	width: 100%;
   background-color: black;
 }
+.model {
+  color: black;
+}
 .about-image {
   background-color: black;
   margin-left: 100px;
@@ -32,8 +35,8 @@
 }
 .video-app {
   position: absolute;
+  z-index: 10;
   padding: 10px;
-  background-color: transparent;
 }
 
 /* buttons:#424242 grey darken-3 */
