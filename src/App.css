@@ -34,9 +34,14 @@
   filter: opacity(.8)
 }
 .video-app {
+  display: block;
   position: absolute;
   z-index: 10;
-  padding: 10px;
+  padding-left:25%;
+  padding-right:25%;
+  padding:black;
+  margin:0px;
+  border:0px;
 }
 
 /* buttons:#424242 grey darken-3 */
