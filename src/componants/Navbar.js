@@ -28,7 +28,7 @@ const NavBar = () => {
     >
       <NavItem onClick={function noRefCheck() { }}>
       </NavItem>
-      <NavItem href="/">
+      <NavItem href="/work">
         Work
     </NavItem>
       <NavItem href="/style">

@@ -6,20 +6,18 @@ import Navbar from './componants/Navbar';
 import Work from './pages/work';
 import Style from './pages/style';
 import About from './pages/about';
+import Home from './pages/home';
 
 function App () {
   return (
     <>
     <Router>
-
 <Navbar />
 <Routes>
-  <Route path='/' element={<Work />} />
+<Route path='/' element={<Home />} />
+  <Route path='/work' element={<Work />} />
   <Route path='/aboutme' element={<About />} />
   <Route path='/style' element={<Style />} />
-
-  
-  {/* <Route render={() => <h1 className='display-2'>Welcome To Our Site!!</h1>} /> */}
 </Routes>
 <Footer />
 
