@@ -37,6 +37,9 @@ const NavBar = () => {
       <NavItem href="/aboutme">
         About Me
     </NavItem>
+    <NavItem href="/contact">
+        Contact Me
+    </NavItem>
       
       
     </Navbar>

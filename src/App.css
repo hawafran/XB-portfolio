@@ -9,7 +9,7 @@
   padding-right: 2px black;
 }
 .text-on-image {
-  position: absolute;
+  position:absolute;
   background-color: transparent;
   top: 15%;
   right: 30%;
@@ -19,7 +19,7 @@
  }
  .welcome-text {
      background-color: transparent;
-     position: absolute;
+     position: fixed;
      bottom: 0;
      background: rgb(0, 0, 0);/* Fallback color */
      background: rgba(0, 0, 0, 0.5);/* Black background with opacity */
@@ -91,8 +91,40 @@
   margin-top: auto;
   margin-bottom:auto;
 }
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  display: flex;
+  display: inline-block;
+  overflow: hidden;
+}
+#contact-element {
+  flex: 1;
+}
+.contact-form {
+  margin-right: 10%;
+  margin-left: 0%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  width: 40%;
+  height:100%;
+  float:right;
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: black;
+}
+.contact-image {
+  margin-left: 10%;
+  margin-right: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: black;
+}
 
-
+/* #bdbdbd grey lighten-1 */
 /* buttons:#424242 grey darken-3 */
 /* background:#000000 black */
 /* text:#ffffff white */
