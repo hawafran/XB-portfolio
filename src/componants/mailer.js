@@ -2,13 +2,22 @@ import 'materialize-css';
 import { TextInput, Button } from 'react-materialize';
 import Instagram from '../images/instagram.png';
 import Email from '../images/email.png';
+import emailjs from 'emailjs-com'
 
+function sendEmail(e){
+    e.preventdefault();
+
+    emailjs.sendForm('service_x5nw4wd', 'template_k95owwl', e.target, '0B9RHKd8iAI_5DC6o').then(res=>{
+        console.log(res);
+    }).catch(err=>console.log(err))
+
+}
 
 const Mailer = () => {
     return (
         <div className = 'contact-form grey lighten-2'>
             <h2>Get in Touch</h2>
-            <form>
+            <form onSubmit={sendEmail}>
             <TextInput 
                 id="TextInput-40" 
                 label="Name" />
