@@ -2,18 +2,9 @@ import 'materialize-css';
 import { TextInput, Button } from 'react-materialize';
 import Instagram from '../images/instagram.png';
 import Email from '../images/email.png';
-// import emailjs from '@emailjs/browser';
-// import{ init } from '@emailjs/browser';
+import {send} from 'emailjs-com';
 import {useState} from 'react';
 
-// function sendEmail(e){
-//     e.preventdefault();
-
-//     init.sendForm('service_x5nw4wd', 'template_k95owwl', e.target, '0B9RHKd8iAI_5DC6o').then(res=>{
-//         console.log(res);
-//     }).catch(err=>console.log(err))
-
-// }
 
 const Mailer = () => {
 
@@ -31,6 +22,18 @@ const Mailer = () => {
     }
     const sendEmail = (e) => {
         e.preventDefault();
+        send (
+            'service_x5nw4wd',
+            'template_k95owwl',
+            {sender_name, sender_email, message},
+            '0B9RHKd8iAI_5DC6o'
+        )
+        .then((response) => {
+            console.log('Message sent successfully', response.status, response.text)
+        })
+        .catch((err) =>{
+            console.log("failed", err)
+        })
     }
 
     return (
