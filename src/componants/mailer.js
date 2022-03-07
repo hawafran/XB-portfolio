@@ -17,29 +17,44 @@ import {useState} from 'react';
 
 const Mailer = () => {
 
-    const [sender_name, sent_sender_name] = useState('');
-    const [sender_email, sent_sender_email] = useState('');
-    const [message, sent_message] = useState('');
+    const [sender_name, set_sender_name] = useState('');
+    const [sender_email, set_sender_email] = useState('');
+    const [message, set_message] = useState('');
+    const handleName = (e) => {
+        set_sender_name(e.target.value)
+    }
+    const handleEmail = (e) => {
+        set_sender_email(e.target.value)
+    }
+    const handleMessage = (e) => {
+        set_message(e.target.value)
+    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+    }
 
     return (
         <div className = 'contact-form grey lighten-2'>
             <h2>Get in Touch</h2>
-            <form>
+            <form onSubmit = {sendEmail}>
             <TextInput 
                 id="TextInput-40" 
                 label="Name" 
-                value = {sender_name}/>
+                value = {sender_name}
+                onChange = {handleName}/>
 
             <TextInput 
                 email id="TextInput-47" 
                 label="Email" 
                 value = {sender_email}
-                validate/>
+                validate
+                onChange = {handleEmail}/>
 
             <TextInput 
                 id="TextInput-40" 
                 label="Message"
-                value = {message} />
+                value = {message}
+                onChange = {handleMessage}/>
 
             <Button 
                 node="button" 
