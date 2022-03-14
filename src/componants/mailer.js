@@ -10,12 +10,16 @@ const Mailer = () => {
 
     const [sender_name, set_sender_name] = useState('');
     const [sender_email, set_sender_email] = useState('');
+    const [message_subject, set_message_subject] = useState('');
     const [message, set_message] = useState('');
     const handleName = (e) => {
         set_sender_name(e.target.value)
     }
     const handleEmail = (e) => {
         set_sender_email(e.target.value)
+    }
+    const handleMessagesubject = (e) => {
+        set_message_subject(e.target.value)
     }
     const handleMessage = (e) => {
         set_message(e.target.value)
@@ -25,7 +29,7 @@ const Mailer = () => {
         send (
             'service_x5nw4wd',
             'template_k95owwl',
-            {sender_name, sender_email, message},
+            {sender_name, sender_email, message_subject, message},
             '0B9RHKd8iAI_5DC6o'
         )
         .then((response) => {
@@ -42,16 +46,22 @@ const Mailer = () => {
             <form onSubmit = {sendEmail}>
             <TextInput 
                 id="TextInput-40" 
-                label="Name" 
+                label="Your Name" 
                 value = {sender_name}
                 onChange = {handleName}/>
 
             <TextInput 
                 email id="TextInput-47" 
-                label="Email" 
+                label="Your Email" 
                 value = {sender_email}
                 validate
                 onChange = {handleEmail}/>
+                
+                <TextInput 
+                id="TextInput-40" 
+                label="Message Subject" 
+                value = {message_subject}
+                onChange = {handleMessagesubject}/>
 
             <TextInput 
                 id="TextInput-40" 
@@ -67,9 +77,7 @@ const Mailer = () => {
                 Submit
             </Button>
             </form>
-        <h1></h1>
-        <h1></h1>    
-        <h4>Follow Me</h4>
+        <h4 className='follow-header'>Follow Me</h4>
         <img className='instagram-icon valign-conter' src = {Instagram}style={{width: '10%'}} alt = "instagram-icon" />
         <img className='email-icon valign-center' src = {Email}style={{width: '12%'}} alt = "email-icon" />
         </div>

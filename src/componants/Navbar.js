@@ -7,7 +7,7 @@ import '../App.css'
 const NavBar = () => {
 
   return (
-<div class="navbar-fixed">
+<div class="navbar">
     <Navbar
       alignLinks="right"
       brand={<a className="brand-logo center" href="#"><h4>Xavier Banks</h4></a>}
