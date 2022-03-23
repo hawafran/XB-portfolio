@@ -41,18 +41,19 @@ const Mailer = () => {
     }
 
     return (
-        <div className = 'contact-form grey lighten-2'>
+        <div className = 'contact-form grey lighten-4 text-black'>
             <h2>Get in Touch</h2>
             <form onSubmit = {sendEmail}>
             <TextInput 
                 id="TextInput-40" 
                 label="Your Name" 
                 value = {sender_name}
+                color = {'black'}
                 onChange = {handleName}/>
 
             <TextInput 
                 email id="TextInput-47" 
-                label="Your Email" 
+                label="Your Email Address" 
                 value = {sender_email}
                 validate
                 onChange = {handleEmail}/>
@@ -65,8 +66,10 @@ const Mailer = () => {
 
             <TextInput 
                 id="TextInput-40" 
+                className='yellow-text text-darken-2'
                 label="Message"
                 value = {message}
+                style={{height: '175px'}}
                 onChange = {handleMessage}/>
 
             <Button 
