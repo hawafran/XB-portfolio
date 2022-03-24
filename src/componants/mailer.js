@@ -2,6 +2,7 @@ import 'materialize-css';
 import { TextInput, Button } from 'react-materialize';
 import Instagram from '../images/instagram.png';
 import Email from '../images/email.png';
+import { Link } from "react-router-dom";
 import {send} from 'emailjs-com';
 import {useState} from 'react';
 
@@ -49,6 +50,7 @@ const Mailer = () => {
                 label="Your Name" 
                 value = {sender_name}
                 color = {'black'}
+                style={{height: '35px'}}
                 onChange = {handleName}/>
 
             <TextInput 
@@ -56,20 +58,22 @@ const Mailer = () => {
                 label="Your Email Address" 
                 value = {sender_email}
                 validate
+                style={{height: '35px'}}
                 onChange = {handleEmail}/>
                 
                 <TextInput 
                 id="TextInput-40" 
                 label="Message Subject" 
                 value = {message_subject}
+                style={{height: '35px'}}
                 onChange = {handleMessagesubject}/>
 
             <TextInput 
                 id="TextInput-40" 
-                className='yellow-text text-darken-2'
+                className='message-input'
                 label="Message"
                 value = {message}
-                style={{height: '175px'}}
+                style={{height: '80px'}}
                 onChange = {handleMessage}/>
 
             <Button 
@@ -81,8 +85,12 @@ const Mailer = () => {
             </Button>
             </form>
         <h4 className='follow-header'>Follow Me</h4>
-        <img className='instagram-icon valign-conter' src = {Instagram}style={{width: '10%'}} alt = "instagram-icon" />
-        <img className='email-icon valign-center' src = {Email}style={{width: '12%'}} alt = "email-icon" />
+        <a href="https://www.instagram.com/xavierbanks__/?hl=en">
+            <img className='instagram-icon valign-conter' src = {Instagram}style={{width: '8%'}} target = "blank" alt = "instagram-icon" />
+        </a>
+        <a href= "mailto:bookingxbanks@gmail.com"> 
+            <img className='email-icon valign-center' src = {Email}style={{width: '10%'}} alt = "email-icon" />
+        </a>
         </div>
 
     )
