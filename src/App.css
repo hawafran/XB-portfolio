@@ -80,9 +80,13 @@
 }
 .video-app {
   display: block;
-  z-index: 10;
+  /* z-index: 10; */
   padding:black;
   margin:0px;
+}
+.video-js {
+  width: 600px;
+  height: 700px;
 }
 .about-card {
   padding-top: 10px;
@@ -132,30 +136,6 @@
   height: 150px;
 }
 
-@media (max-width: 991px) {
-.contact-form {
-  width:40%;
-  height:500px
-}
-.follow-header {
-  visibility: hidden;
-  display:none;
-}
-}
-@media (max-width: 480px) {
-  .contact-form {
-    width:80%;
-    height:60%;
-    height:500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .follow-header {
-    visibility: hidden;
-    display:none;
-  }
-  }
-
 .contact-image {
   height:750px;
   margin-left: 10%;
@@ -168,6 +148,14 @@
   position:relative;
 } 
 @media (max-width: 991px) {
+  .contact-form {
+    width:40%;
+    height:500px
+  }
+  .follow-header {
+    visibility: hidden;
+    display:none;
+  }
   .contact-image {
     width:40%;
     height:500px;
@@ -175,8 +163,22 @@
   .message-input {
     height: 50px;
   }
+  .video-player {
+    padding-right: 100px;
+  }
   }
   @media (max-width: 480px) {
+    .contact-form {
+      width:80%;
+      height:60%;
+      height:500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .follow-header {
+      visibility: hidden;
+      display:none;
+    }
     .contact-image {
       visibility: hidden;
       display:none;
