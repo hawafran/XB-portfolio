@@ -28,7 +28,7 @@ const Mailer = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         send (
-            'service_x5nw4wd',
+            'service_6x09vyd',
             'template_k95owwl',
             {sender_name, sender_email, message_subject, message},
             '0B9RHKd8iAI_5DC6o'

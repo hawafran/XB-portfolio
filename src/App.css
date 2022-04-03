@@ -85,7 +85,7 @@
   margin:0px;
 }
 .video-js {
-  width: 600px;
+  width: 500px;
   height: 700px;
 }
 .about-card {
@@ -164,8 +164,11 @@
     height: 50px;
   }
   .video-player {
-    padding-right: 100px;
+  padding-left: 100px;
   }
+  /* .about-card {
+    width:600px;
+  } */
   }
   @media (max-width: 480px) {
     .contact-form {
