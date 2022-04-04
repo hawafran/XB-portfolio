@@ -2,7 +2,6 @@ import 'materialize-css';
 import { TextInput, Button } from 'react-materialize';
 import Instagram from '../images/instagram.png';
 import Email from '../images/email.png';
-import { Link } from "react-router-dom";
 import {send} from 'emailjs-com';
 import {useState} from 'react';
 
